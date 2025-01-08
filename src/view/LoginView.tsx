@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 
-
 const LoginView = () => {
   return (
     <div className="w-full flex justify-center items-center h-screen">
@@ -30,7 +29,7 @@ const LoginView = () => {
         </div>
         <hr/>
         <div className="flex gap-2 w-full justify-center pt-2">
-        <p>If haven&#39;t registered already </p>
+            <p>If havnt register already </p>
             <Link href="/auth/register" className="text-blue-300">Register</Link>
         </div>
        
