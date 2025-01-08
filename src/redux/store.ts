@@ -1,10 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit'
-import generalReducer from './slices/genralSlice'
+// import { configureStore } from '@reduxjs/toolkit'
+// import generalReducer from './slices/genralSlice'
 
-export const makeStore = () => {
-  return configureStore({
-    reducer: {
-      general: generalReducer,
-    }
-  })
-}
+// export const makeStore = () => {
+//   return configureStore({
+//     reducer: {
+//       general: generalReducer,
+//     }
+//   })
+// }

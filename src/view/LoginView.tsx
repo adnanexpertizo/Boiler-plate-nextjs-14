@@ -1,9 +1,8 @@
 import Link from "next/link";
 import React from "react";
 
-type Props = {};
 
-const LoginView = (props: Props) => {
+const LoginView = () => {
   return (
     <div className="w-full flex justify-center items-center h-screen">
       <div className="w-[50%] h-[50%] ">
@@ -31,7 +30,7 @@ const LoginView = (props: Props) => {
         </div>
         <hr/>
         <div className="flex gap-2 w-full justify-center pt-2">
-            <p>If hav'nt register already </p>
+        <p>If haven&#39;t registered already </p>
             <Link href="/auth/register" className="text-blue-300">Register</Link>
         </div>
        

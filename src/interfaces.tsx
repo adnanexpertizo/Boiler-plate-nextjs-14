@@ -47,3 +47,23 @@ export type HeroCaruselProps ={
   imageURL: string; // URL for the image
   text: string; // Text content for the carousel
 }
+
+export type SamplePrevArrowProps ={
+  className?: string;
+  onClick?: () => void;
+  type?: "prev" | "next";
+}
+
+export type BannerdataProps = {
+  text: string;
+  image: string;
+}
+export type NotRebortProps = {
+  isRobotChecked: boolean;
+  setIsRobotChecked: (value: boolean) => void;
+  showErrorMessage: boolean; // Prop to control the display of error message
+}
+export type IconProps={
+  width: number;
+  height :number;
+}

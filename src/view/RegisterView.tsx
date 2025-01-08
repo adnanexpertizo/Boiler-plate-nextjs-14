@@ -1,9 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-type Props = {};
-
-const RegisterView = (props: Props) => {
+const RegisterView = () => {
   return (
     <div className="w-full flex justify-center items-center h-screen">
       <div className="lg:w-[40%] md:w-[70%] w-full h-[50%] ">

@@ -5,9 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 import HeroCarusel from "./HeroCarusel";
 import { LeftArrowIcon, RightArrowIcon } from "../icons"
 import data from "../data/banner.json";
+import { BannerdataProps, SamplePrevArrowProps } from "@/interfaces";
 const banner = data.banner;
 
-const SamplePrevArrow = ({ className, onClick, type }: any) => {
+const SamplePrevArrow = ({ className, onClick, type }: SamplePrevArrowProps) => {
 
   return (
     <div
@@ -56,7 +57,7 @@ const HeroSection = () => {
   return (
       <div className="md:h-[calc(100vh-112px)] h-[calc(100vh-80px)] ">
         <Slider {...settings} className="lg:h-full custom-width ">
-          {banner.map((items: any, index: number) => {
+          {banner.map((items: BannerdataProps, index: number) => {
             return (
               <HeroCarusel
                 imageURL={items.image}

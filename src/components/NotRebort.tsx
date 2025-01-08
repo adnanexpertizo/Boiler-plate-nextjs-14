@@ -1,4 +1,5 @@
 
+import { NotRebortProps } from "@/interfaces";
 import React from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
@@ -6,7 +7,7 @@ const NotRebort = ({
   isRobotChecked,
   setIsRobotChecked,
   showErrorMessage,
-}: any) => {
+}: NotRebortProps) => {
   const handleCaptchaChange = (token: string | null) => {
     setIsRobotChecked(!!token);
   };
