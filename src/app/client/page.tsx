@@ -1,4 +1,4 @@
-import CareerView from "@/view/CareerView";
+import CleintVeiw from "@/view/ClientView";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,9 +7,9 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div>
-      <CareerView/>
+      <CleintVeiw />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

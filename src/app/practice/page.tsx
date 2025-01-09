@@ -1,4 +1,4 @@
-
+import PracticeView from "@/view/PracticeView"
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div>
-    PracticeView
+      <PracticeView/>
     </div>
   )
 }

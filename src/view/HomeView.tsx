@@ -5,6 +5,7 @@ const HomeView = () => {
   return (
     <Template> 
         <HeroSection/>
+        <div> home text</div>
     </Template>
   )
 }
