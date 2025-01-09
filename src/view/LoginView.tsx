@@ -23,7 +23,7 @@ const LoginView = () => {
               />
             </div>
             <button className=" bg-gray-50 hover:bg-gray-100 duration-300 py-2 rounded">
-              LogIn
+        <Link href="/"> LogIn</Link>     
             </button>
           </form>
         </div>

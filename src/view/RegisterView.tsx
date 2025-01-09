@@ -30,7 +30,8 @@ const RegisterView = () => {
             />
           </div>
           <button className=" bg-gray-50 hover:bg-gray-100 duration-300 py-2 rounded">
-            Register
+          <Link href="/">Register</Link>    
+            
           </button>
         </form>
         <hr />

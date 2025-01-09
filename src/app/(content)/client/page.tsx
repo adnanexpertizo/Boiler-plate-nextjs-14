@@ -1,13 +1,12 @@
-import CareerView from "@/view/CareerView";
+import CleintVeiw from "@/view/ClientView"
 import { Metadata } from "next";
-
 export const metadata: Metadata = {
-  title: "Aurtel Consulting Group | Client",
+  title: "Aurtel Consulting Group | Practice",
 };
 const page = () => {
   return (
     <div>
-      <CareerView/>
+      <CleintVeiw/>
     </div>
   )
 }

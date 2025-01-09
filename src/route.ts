@@ -1,16 +1,14 @@
 const allRoutes = {
   home: { name: "Home", href: "/" },
-  affiliations: { name: "Affiliations", href: "/affiliation" },
-  blog: { name: "Blogs", href: "/blog" },
-  clients: { name: "Clients", href: "/client" },
+  affiliations: { name: "Affiliations", href: "/" },
+  blog: { name: "Blogs", href: "/" },
+  clients: { name: "Clients", href: "/" },
   practices: { name: "Practice Areas", href: "/practice" },
-  about: { name: "About", href: "/about" },
-  contact: { name: "Contact Us", href: "/contact" },
-  career: { name: "Career", href: "/career" },
+  about: { name: "About", href: "/" },
+  contact: { name: "Contact Us", href: "/" },
+  career: { name: "Career", href: "/" },
   login: { name: "LogIn", href: "/auth/login" },
-  terms: { name: "Terms of use", href: "/terms" },
-  privacyPolicy: { name: "Privacy policy", href: "/privacy-policy" },
-  cookiePolicy: { name: "Cookie policy", href: "/cookie-policy" },
+  terms: { name: "Terms of use", href: "/" }
 };
 
 export const navbarRoutes = [
@@ -46,12 +44,5 @@ export const footerRoutes = [
       allRoutes.career,
     ],
   },
-  {
-    title: "Legal",
-    routes: [
-      allRoutes.terms,
-      allRoutes.privacyPolicy,
-      allRoutes.cookiePolicy,
-    ],
-  },
+ 
 ];
