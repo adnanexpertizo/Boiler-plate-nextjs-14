@@ -86,3 +86,32 @@ li, p{
   padding: 0 !important;
   width:100% !important
 }
+
+
+/* Light Theme Colors */
+[data-theme="customLight"] {
+  --primary: #4f46e5;
+  --secondary: #14b8a6;
+  --accent: #10b981;
+  --neutral: #111827;
+  --base-100: #f9fafb;
+  --base-200: #e5e7eb;
+  --info: #3b82f6;
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --error: #dc2626;
+}
+
+/* Dark Theme Colors */
+[data-theme="customDark"] {
+  --primary: #4f46e5;
+  --secondary: #14b8a6;
+  --accent: #10b981;
+  --neutral: #d1d5db;
+  --base-100: #1e293b;
+  --base-200: #6b7280;
+  --info: #3b82f6;
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --error: #dc2626;
+}

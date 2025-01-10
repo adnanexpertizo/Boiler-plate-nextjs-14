@@ -1,41 +1,50 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
+  darkMode: 'class',  // Enable dark mode via the 'dark' class
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/**/*.{js,ts,jsx,tsx,mdx}"
-
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
-    },
-  },
   plugins: [
     require("daisyui"),
   ],
-  // daisyui: {
+  daisyui: {
     themes: [
       {
-        customtheme: {
-          primary: "#312e81",
-          secondary: "#14b8a6",
-          accent: "#10B981",
-          neutral: "#111827",
-          "base-100": "#F9FAFB",
-          "base-200": "#6d8096",
-          info: "#3B82F6",
-          success: "#16A34A",
-          warning: "#F59E0B",
-          error: "#DC2626",
+        customlight: {
+          primary: "#ffffff",
+          secondary: "#22d3ee",
+          accent: "#fbbf24",
+          neutral: "#3d4451",
+          "base-100": "#ffffff", 
+          "base-200": "#f5f5f4", 
+          "base-300": "#f3f4f6", 
+          "info": "#3abff8",
+          "success": "#36d399",
+          "warning": "#fbbd23",
+          "error": "#f87272",
         },
       },
-    ],
-  // },
+      {
+        customdark: {
+          primary: "#7e22ce",
+          secondary: "#2dd4bf",
+          accent: "#fcd34d",
+          neutral: "#1f2937",
+          "base-100": "#1e293b", 
+          "base-200": "#111827",
+          "base-300": "#0f172a",
+          "info": "#0ea5e9",
+          "success": "#10b981",
+          "warning": "#facc15",
+          "error": "#ef4444",
+        },
+      },
+    ]
+  },
 };
+
 export default config;

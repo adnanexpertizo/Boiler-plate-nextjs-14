@@ -10,14 +10,14 @@ const Footer = () => {
         <aside>
           <Link className="flex items-center" href={'/'} >
             <Image className="w-16 md:w-28 lg:w-32" src={Logo} alt="Logo" />
-            <p className="text-[13px] xl:text-[15px]">Aurtel Consulting Group Ltd.</p>
+            <p className="text-[13px] xl:text-[15px] text-primary-content">Aurtel Consulting Group Ltd.</p>
           </Link>
         </aside>
         {footerRoutes.map((section) => (
           <nav key={section.title}>
             <h6 className="footer-title">{section.title}</h6>
             {section.routes.map((item) => (
-              <Link href={item.href} key={item.name} className="link link-hover text-primary">
+              <Link href={item.href} key={item.name} className="link link-hover text-primary-content">
                 {item.name}
               </Link>
             ))}
